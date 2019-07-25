@@ -1,0 +1,2 @@
+<DOCTYPE html>
+<meta charsetutf8>
