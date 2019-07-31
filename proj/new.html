@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf=8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="/proj/test_style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script>
+        function iframeSrc(url){
+            document.getElementById("print_wind").src = url;
+        }
+    </script>
+</head>
+<body>
+    <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
+        <img src="http://mblogthumb3.phinf.naver.net/20160623_298/pkpai_1466677713178cMgXH_PNG/raspberry-pi.png?type=w800" width="40" height="40" alt="">
+        RTES, the Best Lab on Earth
+        <img src="http://mblogthumb3.phinf.naver.net/20160623_298/pkpai_1466677713178cMgXH_PNG/raspberry-pi.png?type=w800" width="40" height="40" alt="">
+    </nav>
+    <iframe src="/proj/test_norm.py" id = "print_wind" class="iframeBorder"></iframe>
+    <div class='container mt-2'>
+        <div class='row'>
+            <hr>
+                <div class='col'>
+                    <input type="button" value="일반공지" onclick="iframeSrc('/proj/test_norm.py')" class="btn btn-outline-info btn-sm btn-block" />
+                </div>
+                <div class='col'>
+                    <input type="button" value="학사공지" onclick="iframeSrc('/proj/test_school.py')" class="btn btn-outline-info btn-sm btn-block" />
+                    <!-- <a href="http://localhost/proj/test_link.py" class="btn btn-outline-info btn-sm btn-block">학사공지</a> -->
+                </div>
+                <div class='col'>
+                    <input type="button" value="학식" onclick="iframeSrc('/proj/test_food.py')" class="btn btn-outline-info btn-sm btn-block" />
+                </div>
+        </div>
+    </div>
+</body>
+</html>
